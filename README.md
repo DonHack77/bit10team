@@ -8,7 +8,7 @@ En este sitio Web consumiremos una API donde encontraremos un listado de los Pok
 
 ## Comandos para correr proyecto
 - npm install
-- npm rum dev
+- npm run dev
 
 ## Responsables
 ### Responsable repositorio:
