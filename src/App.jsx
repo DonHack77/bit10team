@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import { Nav } from './Components/Nav';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return(
     <>
-      <h1>Saludos </h1>
+      <Nav/>
     </>
-  )
+  );
 }
 
 export default App
