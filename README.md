@@ -25,18 +25,19 @@ Trello
 ## Guia de Estilos
 Fuentes:
 Fraunces Thin- bungee- open sans light
+
 Colores:
 Principales: Gris, Blanco, Negro, rojo.
 ## Logo 1
-![Opcion Logo 1](src/Img/Logoprincipal.PNG)
+![Opcion Logo 1](src/Img/FirsLogo.PNG)
 ## Logo 2
-![Opcion Logo 2](src/Img/Logosecundario.PNG)
+![Opcion Logo 2](src/Img/SecondLogo.PNG)
 ## Wireframe de Baja
-![Wireframe Baja](src/Img/wireframeBaja.png)
+![Wireframe Baja](src/Img/WireframeBaja.png)
 ## Wireframe de Alta
-![Wireframe Inicio](src/Img/Wireframes%20Inicio.jpg)
-![Wireframes Footer](src/Img/Wireframes%20footer.jpg)
-![Wireframes Equipo](src/Img/Equipo.jpg)
+![Wireframe Inicio](src/Img/WireframeInicio.jpg)
+![Wireframes Footer](src/Img/WireframeFooter.jpg)
+![Wireframes Equipo](src/Img/WireframeTeam.jpg)
 
 
 ## Autores:
