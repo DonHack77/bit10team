@@ -61,7 +61,7 @@ export const Suggform = ({
               onInput={handleInputName}
               value={sugg.name}
             />
-            <img src="src\Img\image-form.gif" alt="gif" />
+            <img src="../Img/image-form.gif" alt="gif" />
             <button type="button" class="btn btn-danger" onClick={handleAdd}>Enviar</button>
           </form>
         </div>
