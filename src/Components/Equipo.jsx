@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style.css';
+import '../css/style-team.css';
 
 export const Equipo = () => {
     return (

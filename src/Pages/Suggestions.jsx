@@ -2,6 +2,7 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import {Suggform} from '../Components/Suggform'
 import {AllSuggs} from '../Components/AllSuggs'
+import {Footer} from '../Components/Footer'
 import '../css/style-sugg.css'
 
 export const Suggestions = () => {
@@ -41,8 +42,7 @@ export const Suggestions = () => {
           <AllSuggs suggs={suggs} setSuggs={setSuggs} setRename={setRename} />
         </div>
       </div>
-      
-      
+      <Footer />
     </>
   );
 }

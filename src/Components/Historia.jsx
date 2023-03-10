@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/style-history.css'
 
 
 export const PokemonHistory = () => {
@@ -49,14 +50,14 @@ export const PokemonHistory = () => {
             <div className="row justify-content-center">
                 <div className="col-lg-7">
                     <div className="row">
-                        <div className="col-12 col-md-7">
-                            <article className="">
+                        <div className="cont-center-hist col-12 col-md-7">
+                            <article className="conthist-img">
                                 <img
                                     transform="scale(0.4)"
                                     width="360"
                                     height="360"
                                     src="https://www.lovethispic.com/uploaded_images/9849-Game-Boy.gif?1"
-                                    className="img-fluid"
+                                    className="img-fluid img-history"
                                     alt="..."
                                 />
                             </article>
@@ -130,7 +131,7 @@ export const PokemonHistory = () => {
 
                     <div className="row text-center">
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 cont-history">
                             <div className="card-body">
                                 <svg width="44" height="40" xmlns="http://www.w3.org/2000/svg">
                                     <g fill="#9EABB2" fill-rule="nonzero">
@@ -153,7 +154,7 @@ export const PokemonHistory = () => {
 
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 cont-history">
                             <div className="card-body">
                                 <svg width="36" height="32" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -173,7 +174,7 @@ export const PokemonHistory = () => {
 
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 cont-history">
                             <div className="card-body">
                                 <svg width="50" height="32" xmlns="http://www.w3.org/2000/svg">
                                     <path
