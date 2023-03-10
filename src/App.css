@@ -1,22 +1,21 @@
 /* Page Navegacion */
-.py-4{
+.pokedex .py-4{
     font-family: 'Times New Roman', Times, serif;
     background: #Cc0000;
     display: flex;justify-content: space-evenly;
 }
-.mx-2{
-    color: aliceblue;
+.pokedex .mx-2{
     border-radius: 15px ;
 }
 
 /*Page Index */
-.card{
+.pokedex .card{
     justify-content: center;
     box-shadow: 1px 1px 5ppx gray;
     margin:5px
 }
 
-.cards{
+.pokedex .cards{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -25,28 +24,29 @@
     padding: 0px;
 }
 
-.cards-item{
+.pokedex .cards-item{
     display: flex;
     padding: 1rem;
 }
 
-.card-header{
+.pokedex .card-header{
     justify-content: center;
     display: flex;
-    background: red;
+    background: #dc3545;
+    color: aliceblue;
 
 }
-.card-body{
-    justify-content: center;
-    display: flex;
-}
-
-.card-footer{
+.pokedex .card-body{
     justify-content: center;
     display: flex;
 }
 
+.pokedex .card-footer{
+    justify-content: center;
+    display: flex;
+}
 
-.img-pokeball{
+
+.pokedex .img-pokeball{
     max-width: 45px;
 }

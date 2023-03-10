@@ -3,7 +3,7 @@ import { CardPokemon } from './CardPokemon'
 
 export const Cards = ({results}) => {
   return (
-    <div className='container'>
+    <div className='container pokedex'>
         <ul className='cards'>
             {
                 results.map(p => (

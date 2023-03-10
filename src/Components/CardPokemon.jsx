@@ -7,7 +7,7 @@ export const CardPokemon = ({ url }) => {
   const { cargando, data } = estado;
 
   return (
-    <div>
+    <div className="pokedex">
       {cargando ? (
         <Spinner animation="grow" variant="dark" />
       ) : (
