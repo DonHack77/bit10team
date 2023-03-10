@@ -7,16 +7,16 @@ export const Equipo = () => {
             <div className="container">
 
                 <div className="section-title">
-                    <span>Team</span>
-                    <h2>Team</h2>
-                    <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+                    <span>Bit Legion</span>
+                    <h2>Bit Legion</h2>
+                    <p>Hola, nosotros somos Bit Legion, y aquí encontraras más información sobre nosotros</p>
                 </div>
 
                 <div className="row">
                     <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div className="member">
-                            <img src="https://bootstrapmade.com/demo/templates/eNno/assets/img/team/team-2.jpg" alt="" />
-                            <h4>Walter White</h4>
+                            <img src="/src/Img/Donovan.jpg" alt="" />
+                            <h4>Donovan</h4>
                             <span>Chief Executive Officer</span>
                             <p>
                                 Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
@@ -32,8 +32,8 @@ export const Equipo = () => {
 
                     <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div className="member">
-                            <img src="https://bootstrapmade.com/demo/templates/eNno/assets/img/team/team-2.jpg" alt="" />
-                            <h4>Sarah Jhinson</h4>
+                            <img src="/src/Img/Jhonatan.jpg" alt="" />
+                            <h4>Jhonatan</h4>
                             <span>Product Manager</span>
                             <p>
                                 Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
@@ -49,8 +49,8 @@ export const Equipo = () => {
 
                     <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div className="member">
-                            <img src="https://bootstrapmade.com/demo/templates/eNno/assets/img/team/team-2.jpg" alt="" />
-                            <h4>William Anderson</h4>
+                            <img src="/src/Img/Melany.jpg" alt="" />
+                            <h4>Melany</h4>
                             <span>CTO</span>
                             <p>
                                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
