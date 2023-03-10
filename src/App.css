@@ -1,0 +1,52 @@
+/* Page Navegacion */
+.py-4{
+    font-family: 'Times New Roman', Times, serif;
+    background: #Cc0000;
+    display: flex;justify-content: space-evenly;
+}
+.mx-2{
+    color: aliceblue;
+    border-radius: 15px ;
+}
+
+/*Page Index */
+.card{
+    justify-content: center;
+    box-shadow: 1px 1px 5ppx gray;
+    margin:5px
+}
+
+.cards{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.cards-item{
+    display: flex;
+    padding: 1rem;
+}
+
+.card-header{
+    justify-content: center;
+    display: flex;
+    background: red;
+
+}
+.card-body{
+    justify-content: center;
+    display: flex;
+}
+
+.card-footer{
+    justify-content: center;
+    display: flex;
+}
+
+
+.img-pokeball{
+    max-width: 45px;
+}
