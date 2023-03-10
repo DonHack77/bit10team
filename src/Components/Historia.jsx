@@ -51,14 +51,14 @@ export const PokemonHistory = () => {
                     <div className="row">
                         <div className="col-12 col-md-7">
                             <article className="">
-                            <img
-                                                transform="scale(0.4)"
-                                                width="360"
-                                                height="360"
-                                                src="https://www.lovethispic.com/uploaded_images/9849-Game-Boy.gif?1"
-                                                className="img-fluid"
-                                                alt="..."
-                                            />
+                                <img
+                                    transform="scale(0.4)"
+                                    width="360"
+                                    height="360"
+                                    src="https://www.lovethispic.com/uploaded_images/9849-Game-Boy.gif?1"
+                                    className="img-fluid"
+                                    alt="..."
+                                />
                             </article>
                         </div>
                         <div className="col-12 col-md-5">
@@ -94,26 +94,18 @@ export const PokemonHistory = () => {
                             <p className="p2 m-4 p-2">
                                 Los primeros tres juegos de Pokemon, fueron lanzados inicialmente en Japón en 1996 Los tres juegos son muy similares en cuanto a la trama y la jugabilidad, pero difieren ligeramente en los Pokemon disponibles para capturar y entrenar. En estos juegos, los jugadores asumen el papel de un entrenador de Pokemon y tienen como objetivo convertirse en el campeón de la Liga Pokemon, capturando y entrenando Pokemon para luchar contra otros entrenadores y sus Pokemon. Los juegos tuvieron un gran éxito en todo el mundo y ayudaron a establecer a Pokemon como una de las franquicias de entretenimiento más populares y exitosas de todos los tiempos.
                             </p>
+
+                            <article className="">
+                                <img
+                                    transform="scale(0.4)"
+                                    width="360"
+                                    height="360"
+                                    src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/02/23/16140823976294.jpg"
+                                    className="img-fluid"
+                                    alt="..."
+                                />
+                            </article>
                         </div>
-
-                        <div className="card-body">
-                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2021/09/pokemon-rojo-verde-azul.jpg?itok=JqrS8tNj" className="img-fluid" alt="Pokemon Rojo, Azul y Verde" />
-                        </div>
-
-
-
-                        <div className="card-body">
-                            <h3> Pokemon Rojo, Azul y Verde </h3>
-
-                            <p className="p2 m-4 p-2">
-                                Los primeros tres juegos de Pokemon, fueron lanzados inicialmente en Japón en 1996 Los tres juegos son muy similares en cuanto a la trama y la jugabilidad, pero difieren ligeramente en los Pokemon disponibles para capturar y entrenar. En estos juegos, los jugadores asumen el papel de un entrenador de Pokemon y tienen como objetivo convertirse en el campeón de la Liga Pokemon, capturando y entrenando Pokemon para luchar contra otros entrenadores y sus Pokemon. Los juegos tuvieron un gran éxito en todo el mundo y ayudaron a establecer a Pokemon como una de las franquicias de entretenimiento más populares y exitosas de todos los tiempos.
-                            </p>
-                        </div>
-
-                        <div className="card-body">
-                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2021/09/pokemon-rojo-verde-azul.jpg?itok=JqrS8tNj" className="img-fluid" alt="Pokemon Rojo, Azul y Verde" />
-                        </div>
-
                         <div className="my-4">
                             <br />
                         </div>
@@ -205,15 +197,10 @@ export const PokemonHistory = () => {
             </div>
 
 
-
-
             <div className="text-center mb-5">
-
-
 
                 <div className="row d-flex justify-content-center">
                     <div className="col-lg-7">
-
 
                         <div className="mt-4">
                             <h3 className=""> Para conocer más sobre estas criaturas explora nuestra Pokedex :) </h3>
