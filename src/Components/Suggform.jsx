@@ -50,7 +50,7 @@ export const Suggform = ({
       {rename && exists ? (
         <form className="cont-form">
           <input type="text" onInput={handleInputRename} value={exists.name} />
-          <button type="button" class="btn btn-success"onClick={handleClickRename}>Editar</button>
+          <button type="button" class="btn btn-success" onClick={handleClickRename}>Editar</button>
         </form>
       ) : (
         <div className="cont-form">
@@ -61,11 +61,11 @@ export const Suggform = ({
               onInput={handleInputName}
               value={sugg.name}
             />
-            <img src="../Img/image-form.gif" alt="gif" />
+            <img src="https://media.tenor.com/0WkmuOC_W00AAAAi/waving-pikachu.gif" alt="gif" />
             <button type="button" class="btn btn-danger" onClick={handleAdd}>Enviar</button>
           </form>
         </div>
-        
+
       )}
     </>
   );

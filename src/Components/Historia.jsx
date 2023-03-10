@@ -211,7 +211,7 @@ export const PokemonHistory = () => {
 
 
                         <div className="my-4">
-                            <button type="button" className="btn btn-primary col-10 col-lg-3 m-2 shadow py-2">Ir al inicio</button>
+                            <button type="button" className="btn btn-danger col-10 col-lg-3 m-2 shadow py-2">Ir al inicio</button>
                             <button type="button" className="btn btn-secondary col-10 col-lg-3 m-2 shadow py-2">Ir a la Pokedex</button>
                         </div>
 
