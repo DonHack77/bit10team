@@ -3,70 +3,89 @@ import { Spinner } from "react-bootstrap";
 import { ConsumigApi } from "../Components/ConsumigApi";
 import { Cards } from "../Components/Cards";
 
+const SearchBar = ({ value, onChange }) => {
+  return (
+    <div>
+      <input
+        value={value}
+        onChange={onChange}
+        type="text"
+        placeholder="Buscar"
+      />
+    </div>
+  );
+};
+
+const Pagination = ({ previousUrl, nextUrl, onPreviousClick, onNextClick }) => {
+  return (
+    <div className="container m-auto">
+      <button onClick={onPreviousClick} className="m-2 btn btn-dark">
+        Anterior
+      </button>
+      <button onClick={onNextClick} className="btn btn-dark">
+        Siguiente
+      </button>
+    </div>
+  );
+};
+
+const PokemonList = ({ data, search, onPokemonSelected }) => {
+  const filteredData = data.results.filter((r) =>
+    r.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return <Cards results={filteredData} onPokemonSelected={onPokemonSelected} />;
+};
+
 export const Index = () => {
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
-  const estado = ConsumigApi(url);
-  const { cargando, data } = estado;
-  cargando ? console.log("cargando") : console.log(data.results);
-
+  const { cargando, data } = ConsumigApi(url);
   const [search, setSearch] = useState("");
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
 
-  const searcher = (e) => {
+  useEffect(() => {
+    setSelectedPokemon(null);
+  }, [search]);
+
+  const handleSearchChange = (e) => {
     setSearch(e.target.value);
   };
 
-  const [pokemon, setPokemon] = useState(null);
+  const handlePreviousClick = () => {
+    setUrl(data.previous);
+  };
 
-  useEffect(() => {
-    if (search) {
-      getPokemon();
-    }
-  }, [search]);
+  const handleNextClick = () => {
+    setUrl(data.next);
+  };
 
-  const getPokemon = () => {
-    console.log(search);
-    console.log(data.results);
-    const x = data.results.filter((r) => r.name === search);
-    console.log(x);
-    if (x.length === 1) {
-      setPokemon(x[0]);
-    }
+  const handlePokemonSelected = (pokemon) => {
+    setSelectedPokemon(pokemon);
   };
 
   return (
     <div>
-      <input
-        value={search}
-        onChange={searcher}
-        type="text"
-        placeholder="Buscar"
-      />
+      <SearchBar value={search} onChange={handleSearchChange} />
       {cargando ? (
         <Spinner animation="grow" variant="dark" />
       ) : (
-        <div>
-          <>
-            {pokemon ? (
-              <Cards results={[pokemon]} />
-            ) : (
-              <Cards results={data.results} />
-            )}
-            <div className="container m-auto">
-              <button
-                onClick={() => setUrl(data.previous)}
-                className="m-2 btn btn-dark"
-              >
-                Anterior
-              </button>
-              <button
-                onClick={() => setUrl(data.next)}
-                className="btn btn-dark"
-              >
-                Siguiente
-              </button>
-            </div>
-          </>
-        </div>
+        <>
+          {selectedPokemon ? (
+            <Cards results={[selectedPokemon]} />
+          ) : (
+            <PokemonList
+              data={data}
+              search={search}
+              onPokemonSelected={handlePokemonSelected}
+            />
+          )}
+          <Pagination
+            previousUrl={data.previous}
+            nextUrl={data.next}
+            onPreviousClick={handlePreviousClick}
+            onNextClick={handleNextClick}
+          />
+        </>
       )}
     </div>
   );
