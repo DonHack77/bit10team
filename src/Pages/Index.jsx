@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { ConsumigApi } from "../Components/ConsumigApi";
 import { Cards } from "../Components/Cards";
+import { Footer } from '../Components/Footer'
 
 const SearchBar = ({ value, onChange }) => {
   return (
@@ -93,6 +94,7 @@ export const Index = () => {
             onPreviousClick={handlePreviousClick}
             onNextClick={handleNextClick}
           />
+          <Footer/>
         </>
       )}
     </div>
