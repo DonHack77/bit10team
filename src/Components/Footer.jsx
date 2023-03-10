@@ -7,10 +7,10 @@ export const Footer = () => {
     <div>
 
       <footer className="bg-dark text-center text-white">
-        <div className="container p-4">
+        <div className="container p-2">
 
 
-          <section className="mb-4">
+          <section className="mb-1">
             <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Pokemon/?locale=es_LA" role="button">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -25,43 +25,11 @@ export const Footer = () => {
             </a>
           </section>
 
-          <section>
-            <div className="row">
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Jhonatan</h5>
-                <ul className="list-unstyled mb-0">
-                  <li><a href="#!" className="text-white">Link 1</a></li>
-                </ul>
-              </div>
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Valentina</h5>
-                <ul className="list-unstyled mb-0">
-                  <li><a href="#!" className="text-white">Link 1</a></li>
-                </ul>
-              </div>
 
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Donovan</h5>
-                <ul className="list-unstyled mb-0">
-                  <li><a href="#!" className="text-white">Link 1</a></li>
-                </ul>
-              </div>
-
-
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Melany</h5>
-                <ul className="list-unstyled mb-0">
-                  <li><a href="#!" className="text-white">Link 1</a></li>
-                </ul>
-              </div>
-
-            </div>
-
-          </section>
 
         </div>
 
-        <div style={{ backgroundColor: 'rgba(8, 0, 0, 0.2)' }} className="text-center p-3">
+        <div style={{ backgroundColor: '#cc0000' }} className="text-center p-3">
           © 2023 Bit Legion. Todos los derechos reservados.
         </div>
 
