@@ -1,5 +1,15 @@
-/*Page Index */
+/* Page Navegacion */
+.py-4{
+    font-family: 'Times New Roman', Times, serif;
+    background: #Cc0000;
+    display: flex;justify-content: space-evenly;
+}
+.mx-2{
+    color: aliceblue;
+    border-radius: 15px ;
+}
 
+/*Page Index */
 .card{
     justify-content: center;
     box-shadow: 1px 1px 5ppx gray;
@@ -23,6 +33,7 @@
 .card-header{
     justify-content: center;
     display: flex;
+    background: red;
 
 }
 .card-body{

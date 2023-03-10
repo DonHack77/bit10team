@@ -7,10 +7,10 @@ import { Suggestions } from "../Pages/Suggestions";
 
 export const Nav = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <nav className="py-4 text-center">
         <Link className="mx-2" to="/">
-          PokeApi
+          Pokedex
         </Link>
         <Link className="mx-2" to="/Historia">
           Historia
