@@ -1,0 +1,36 @@
+/*Page Index */
+
+.card{
+    justify-content: center;
+    box-shadow: 1px 1px 5ppx gray;
+    margin:5px
+}
+
+.cards{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.cards-item{
+    display: flex;
+    padding: 1rem;
+}
+
+.card-header{
+    justify-content: center;
+    display: flex;
+
+}
+.card-body{
+    justify-content: center;
+    display: flex;
+}
+
+.card-footer{
+    justify-content: center;
+    display: flex;
+}
