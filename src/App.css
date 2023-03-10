@@ -45,3 +45,8 @@
     justify-content: center;
     display: flex;
 }
+
+
+.img-pokeball{
+    max-width: 45px;
+}
