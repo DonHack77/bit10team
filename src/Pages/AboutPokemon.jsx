@@ -1,5 +1,5 @@
 import React from 'react';
-import { PokemonHistory } from '../Components/historia';
+import { PokemonHistory } from '../Components/Historia';
 import { Footer } from '../Components/Footer'
 
 
