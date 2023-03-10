@@ -29,7 +29,7 @@ export const Footer = () => {
 
         </div>
 
-        <div style={{ backgroundColor: '#cc0000' }} className="text-center p-3">
+        <div className="text-center p-3 bg-danger">
           © 2023 Bit Legion. Todos los derechos reservados.
         </div>
 
