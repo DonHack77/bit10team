@@ -47,6 +47,10 @@
 }
 
 
-.pokedex .img-pokeball{
-    max-width: 45px;
-}
+
+
+@media screen and (max-width: 800px) {
+    .img-pokeball{
+        display: none;
+    }
+  }
