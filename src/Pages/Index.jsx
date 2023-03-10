@@ -30,7 +30,7 @@ const Pagination = ({ previousUrl, nextUrl, onPreviousClick, onNextClick }) => {
 };
 
 const PokemonList = ({ data, search, onPokemonSelected }) => {
-  const filteredData = data.results.filter((r) =>
+  const filteredData = data.filter((r) =>
     r.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -38,7 +38,7 @@ const PokemonList = ({ data, search, onPokemonSelected }) => {
 };
 
 export const Index = () => {
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=151");
   const { cargando, data } = ConsumigApi(url);
   const [search, setSearch] = useState("");
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -63,6 +63,12 @@ export const Index = () => {
     setSelectedPokemon(pokemon);
   };
 
+  const searchPokemon = async (name) => {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+    const data = await response.json();
+    setSelectedPokemon(data);
+  };
+
   return (
     <div>
       <SearchBar value={search} onChange={handleSearchChange} />
@@ -74,7 +80,7 @@ export const Index = () => {
             <Cards results={[selectedPokemon]} />
           ) : (
             <PokemonList
-              data={data}
+              data={data.results}
               search={search}
               onPokemonSelected={handlePokemonSelected}
             />
