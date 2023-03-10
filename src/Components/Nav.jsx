@@ -9,7 +9,7 @@ export const Nav = () => {
   return (
     <BrowserRouter >
 
-      <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-danger shadow">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

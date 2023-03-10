@@ -5,20 +5,22 @@ import { Cards } from "../Components/Cards";
 
 const SearchBar = ({ value, onChange }) => {
   return (
-    <div>
-      <input
-        value={value}
-        onChange={onChange}
-        type="text"
-        placeholder="Buscar"
-      />
+    <div className="mb-4 mt-4">
+      <div className="container">
+        <form className="form-inline my-2 my-lg-0 shadow">
+          <input className="form-control mr-sm-2 me-5" type="Buscar" value={value}
+            onChange={onChange}
+            placeholder="Buscar" />
+        </form>
+      </div>
     </div>
+
   );
 };
 
 const Pagination = ({ previousUrl, nextUrl, onPreviousClick, onNextClick }) => {
   return (
-    <div className="container m-auto">
+    <div className="container m-auto text-center mt-4 mb-4">
       <button onClick={onPreviousClick} className="m-2 btn btn-dark">
         Anterior
       </button>

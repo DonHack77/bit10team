@@ -11,7 +11,7 @@ export const CardPokemon = ({ url }) => {
       {cargando ? (
         <Spinner animation="grow" variant="dark" />
       ) : (
-        <div className="card" style={{ width: "14rem" }}>
+        <div className="card shadow" style={{ width: "14rem" }}>
           <div className="card-header">
             <h5 className="card-title">{data.id}</h5>
           </div>
