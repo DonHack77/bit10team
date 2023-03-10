@@ -21,7 +21,7 @@ export const Suggestions = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container-sugg">
         <div className="cont-tittle">
           <h1 className='text-center' >Sugerencias</h1>
           <p className='text-center'>{message}</p>

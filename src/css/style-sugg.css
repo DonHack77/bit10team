@@ -10,7 +10,7 @@ h2{
 }
 
 
-.container{
+.container-sugg{
     display: flex;
     justify-content: center;
     flex-direction: column;
