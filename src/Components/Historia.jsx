@@ -71,7 +71,7 @@ export const PokemonHistory = () => {
                                 </p>
                             </article>
                             <article className="card-body">
-                                <h5>Primeros Juegos</h5>
+                                <h5 class>Primeros Juegos</h5>
                                 <p className="p3">
                                     Los juegos originales fueron lanzados para la consola portátil de Nintendo, Game Boy, y permitían a los jugadores capturar y entrenar Pokemon para competir contra otros entrenadores en una mecánica de juego única.
                                 </p>
